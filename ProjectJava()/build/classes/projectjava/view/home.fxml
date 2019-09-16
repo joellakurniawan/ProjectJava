@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectjava.Controller.HomeController">
+   <children>
+      <ImageView fitHeight="657.0" fitWidth="1003.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fix.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="supplier_btn" focusTraversable="false" layoutX="351.0" layoutY="279.0" onAction="#supplier_btnClick" prefHeight="31.0" prefWidth="300.0" ripplerFill="#7c2626" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="SUPPLIER" textFill="#7c2626">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="customer_btn" focusTraversable="false" layoutX="351.0" layoutY="318.0" onAction="#customer_btnClick" prefHeight="31.0" prefWidth="300.0" ripplerFill="#3b5f91" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="CUSTOMER" textFill="#3b5f91">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="item_btn" focusTraversable="false" layoutX="351.0" layoutY="357.0" onAction="#item_btnClick" prefHeight="33.0" prefWidth="300.0" ripplerFill="#772b5a" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="ITEM" textFill="#772b5a">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="pembelian_btn" focusTraversable="false" layoutX="351.0" layoutY="396.0" onAction="#pembelian_btnClick" prefHeight="33.0" prefWidth="300.0" ripplerFill="#b7590c" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="PEMBELIAN" textFill="#b7590c">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="penjualan_btn" focusTraversable="false" layoutX="351.0" layoutY="435.0" onAction="#penjualan_btnClick" prefHeight="34.0" prefWidth="300.0" ripplerFill="#04968f" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="PENJUALAN" textFill="#04968f">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="suratjalan_btn" focusTraversable="false" layoutX="351.0" layoutY="474.0" onAction="#suratjalan_btnClick" prefHeight="36.0" prefWidth="300.0" ripplerFill="#a84374" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="SURAT JALAN" textFill="#a84374">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="laporan_btn" focusTraversable="false" layoutX="351.0" layoutY="513.0" onAction="#laporan_btnClick" prefHeight="36.0" prefWidth="300.0" ripplerFill="#755515" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="LAPORAN" textFill="#755515">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

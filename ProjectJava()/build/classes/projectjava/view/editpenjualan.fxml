@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #04968f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectjava.Controller.EditPenjualanController">
+   <children>
+      <FontAwesomeIcon fill="WHITE" iconName="UPLOAD" layoutX="108.0" layoutY="228.0" size="10em" />
+      <ImageView fitHeight="60.0" fitWidth="140.0" layoutX="94.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/picturetopeople.org-bedac87e51a48e29c30ac7edd478783d43ce712b9227449fef.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="112.0" layoutY="211.0" text="PENJUALAN" textFill="#04968f">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="14.0" layoutY="278.0" prefHeight="200.0" prefWidth="299.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="75.0" layoutY="14.0" text="DETAIL PENJUALAN" textFill="#04968f">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="48.0" text="ID :" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="89.0" layoutY="39.0" orientation="VERTICAL" prefHeight="107.0" prefWidth="1.0" />
+            <Label layoutX="35.0" layoutY="76.0" text="Barang :" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailpenjualan_id" layoutX="102.0" layoutY="48.0" text="########" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="106.0" text="Jumlah :" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="jumlah_textfield" layoutX="102.0" layoutY="101.0" prefHeight="25.0" prefWidth="161.0" />
+            <JFXButton fx:id="adddetailpenjualan_btn" layoutX="124.0" layoutY="151.0" onAction="#adddetailpenjualan_btnClick" style="-fx-background-color: #04968f;" text="ADD" textFill="WHITE" />
+            <JFXComboBox fx:id="item_cb" layoutX="102.0" layoutY="70.0" prefHeight="25.0" prefWidth="161.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="336.0" layoutY="18.0" prefHeight="564.0" prefWidth="643.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="234.0" layoutY="14.0" text="EDIT NOTA PENJUALAN" textFill="#04968f">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="236.0" layoutY="48.0" text="ID :" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="262.0" layoutY="39.0" orientation="VERTICAL" prefHeight="107.0" prefWidth="1.0" />
+            <Label layoutX="192.0" layoutY="77.0" text="Customer :" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="notapenjualan_id" layoutX="275.0" layoutY="48.0" text="########" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="202.0" layoutY="106.0" text="Tanggal :" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="tgl_notapenjualan" defaultColor="#04968f" layoutX="275.0" layoutY="103.0" />
+            <TableView fx:id="editnotapenjualan_table" layoutX="19.0" layoutY="160.0" prefHeight="356.0" prefWidth="604.0">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="75.0" text="ID Detail Pembelian" />
+                  <TableColumn fx:id="id_item" prefWidth="75.0" text="ID Barang" />
+                  <TableColumn fx:id="nama_barang" prefWidth="75.0" text="Nama Barang" />
+                  <TableColumn fx:id="jumlah" prefWidth="75.0" text="Jumlah" />
+                  <TableColumn fx:id="harga_satuan" prefWidth="75.0" text="Harga Satuan" />
+                  <TableColumn fx:id="total" prefWidth="75.0" text="Total" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="editpenjualan_btn" layoutX="508.0" layoutY="527.0" onAction="#editpenjualan_btnClick" style="-fx-background-color: #04968f;" text="SAVE" textFill="WHITE" />
+            <JFXButton fx:id="editpenjualan_cancel" layoutX="563.0" layoutY="527.0" onAction="#editpenjualan_cancel_btn" style="-fx-background-color: #04968f;" text="CANCEL" textFill="WHITE" />
+            <Label fx:id="totalharga_txt" layoutX="291.0" layoutY="530.0" text="########" textFill="#04968f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="deletedetailpenjualan_btn" layoutX="19.0" layoutY="527.0" onAction="#deletedetailpenjualan_btnClick" style="-fx-background-color: #04968f;" text="DELETE" textFill="WHITE" />
+            <Label fx:id="customer_id" layoutX="275.0" layoutY="78.0" text="########" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

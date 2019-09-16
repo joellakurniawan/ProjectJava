@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="500.0" style="-fx-background-color: #3b5f91;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <FontAwesomeIcon fill="WHITE" iconName="USER" layoutX="203.0" layoutY="156.0" size="10em" />
+      <ImageView fitHeight="39.0" fitWidth="113.0" layoutX="194.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@picturetopeople.org-bedac87e51a48e29c30ac7edd478783d43ce712b9227449fef.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="14.0" layoutY="196.0" prefHeight="255.0" prefWidth="472.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="173.0" layoutY="14.0" text="ADD CUSTOMER" textFill="#3b5f91">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="48.0" text="ID :" textFill="#3b5f91">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="140.0" layoutY="39.0" orientation="VERTICAL" prefHeight="173.0" prefWidth="0.0" />
+            <Label layoutX="92.0" layoutY="76.0" text="Nama :" textFill="#3b5f91">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="153.0" layoutY="48.0" text="########" textFill="#3b5f91">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="153.0" layoutY="70.0" prefHeight="25.0" prefWidth="234.0" />
+            <Label layoutX="85.0" layoutY="106.0" text="Alamat :" textFill="#3b5f91">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="153.0" layoutY="101.0" prefHeight="25.0" prefWidth="234.0" />
+            <Label layoutX="87.0" layoutY="138.0" text="No Tlp :" textFill="#3b5f91">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="153.0" layoutY="134.0" prefHeight="25.0" prefWidth="234.0" />
+            <Label layoutX="95.0" layoutY="173.0" text="Email :" textFill="#3b5f91">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="153.0" layoutY="166.0" prefHeight="25.0" prefWidth="234.0" />
+            <JFXButton layoutX="181.0" layoutY="212.0" style="-fx-background-color: #3b5f91;" text="ADD" textFill="WHITE" />
+            <JFXButton layoutX="236.0" layoutY="212.0" style="-fx-background-color: #3b5f91;" text="CANCEL" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Label layoutX="217.0" layoutY="137.0" text="CUSTOMER" textFill="#3b5f91">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

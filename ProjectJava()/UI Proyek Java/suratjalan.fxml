@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="282.0" prefHeight="52.0" prefWidth="720.0" style="-fx-background-color: #a84374;">
+         <children>
+            <Label alignment="TOP_LEFT" text="SURAT JALAN" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="260.0" top="8.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <VBox prefHeight="600.0" prefWidth="279.0" style="-fx-background-color: #151921;">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@picturetopeople.org-bedac87e51a48e29c30ac7edd478783d43ce712b9227449fef.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="11.0" right="12.0" top="60.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="258.0" text="Logged in as ADMIN" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="12.0" />
+               </VBox.margin>
+            </Label>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Separator>
+            <JFXButton alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="282.0" ripplerFill="#72824f" text="HOME" textFill="#d1e99b">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="282.0" ripplerFill="#7c2626" text="SUPPLIER" textFill="#f85b5b">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="282.0" ripplerFill="#3b5f91" text="CUSTOMER" textFill="#6aabfb">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="282.0" ripplerFill="#772b5a" text="ITEM" textFill="#f837b5">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="282.0" ripplerFill="#b7590c" text="PEMBELIAN" textFill="#ff7e14">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="282.0" ripplerFill="#04968f" text="PENJUALAN" textFill="#06dbcd">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="282.0" ripplerFill="#a84374" text="SURAT JALAN" textFill="#e698bf">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="282.0" ripplerFill="#755515" text="LAPORAN" textFill="#ffb833">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <JFXTextField focusColor="#72824f" layoutX="395.0" layoutY="71.0" prefHeight="25.0" prefWidth="432.0" />
+      <JFXButton layoutX="839.0" layoutY="74.0" style="-fx-background-color: #a84374;" text="Search" textFill="WHITE" />
+      <Label layoutX="558.0" layoutY="109.0" text="Urut Berdasarkan:" />
+      <JFXComboBox focusColor="#72824f" layoutX="662.0" layoutY="105.0" prefHeight="25.0" prefWidth="88.0" />
+      <TableView layoutX="316.0" layoutY="147.0" prefHeight="407.0" prefWidth="661.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="ID Surat Jalan" />
+            <TableColumn prefWidth="75.0" text="Tanggal" />
+            <TableColumn prefWidth="75.0" text="Nama Barang" />
+            <TableColumn prefWidth="75.0" text="Jumlah" />
+            <TableColumn prefWidth="75.0" text="Lokasi Asal" />
+            <TableColumn prefWidth="75.0" text="Lokasi Tujuan" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="570.0" layoutY="563.0" style="-fx-background-color: #a84374;" text="Add" textFill="WHITE" />
+      <JFXButton layoutX="633.0" layoutY="563.0" style="-fx-background-color: #a84374;" text="Edit" textFill="WHITE" />
+      <JFXButton layoutX="693.0" layoutY="563.0" style="-fx-background-color: #a84374;" text="Delete" textFill="WHITE" />
+   </children>
+</Pane>

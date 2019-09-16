@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="653.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="706.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@login_img.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="37.0" layoutY="40.0" prefHeight="318.0" prefWidth="288.0" style="-fx-background-color: #B3DFFF;">
+         <children>
+            <JFXTextField focusColor="#2bbf2b" layoutX="44.0" layoutY="93.0" prefHeight="25.0" prefWidth="200.0" promptText="Username" unFocusColor="#b5b2b2" />
+            <JFXPasswordField focusColor="#2cc648" layoutX="44.0" layoutY="157.0" prefHeight="25.0" prefWidth="200.0" promptText="Password" unFocusColor="#9ea8a1" />
+            <JFXButton layoutX="44.0" layoutY="228.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" text="Login" />
+            <Label layoutX="117.0" layoutY="37.0" text="Sign In">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon iconName="USER" layoutX="23.0" layoutY="110.0" size="" />
+            <FontAwesomeIcon iconName="KEY" layoutX="23.0" layoutY="180.0" size="" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="629.0" layoutY="4.0" prefHeight="34.0" prefWidth="14.0" text="X" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="389.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="69.0" fitWidth="238.0" layoutX="388.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@picturetopeople.org-bedac87e51a48e29c30ac7edd478783d43ce712b9227449fef.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

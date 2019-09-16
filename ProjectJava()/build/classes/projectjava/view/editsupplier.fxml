@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="500.0" style="-fx-background-color: #7c2626;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectjava.Controller.EditSupplierController">
+   <children>
+      <FontAwesomeIcon fill="WHITE" iconName="GROUP" layoutX="186.0" layoutY="163.0" size="10em" />
+      <ImageView fitHeight="39.0" fitWidth="113.0" layoutX="194.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/picturetopeople.org-bedac87e51a48e29c30ac7edd478783d43ce712b9227449fef.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="14.0" layoutY="196.0" prefHeight="255.0" prefWidth="472.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="180.0" layoutY="14.0" text="EDIT SUPPLIER" textFill="#7c2626">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="48.0" text="ID :" textFill="#7c2626">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="140.0" layoutY="39.0" orientation="VERTICAL" prefHeight="173.0" prefWidth="0.0" />
+            <Label layoutX="92.0" layoutY="76.0" text="Nama :" textFill="#7c2626">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="supplier_id" layoutX="153.0" layoutY="48.0" text="########" textFill="#7c2626">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="supplier_nama" layoutX="153.0" layoutY="70.0" prefHeight="25.0" prefWidth="234.0" />
+            <Label layoutX="85.0" layoutY="106.0" text="Alamat :" textFill="#7c2626">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="supplier_alamat" layoutX="153.0" layoutY="101.0" prefHeight="25.0" prefWidth="234.0" />
+            <Label layoutX="87.0" layoutY="138.0" text="No Tlp :" textFill="#7c2626">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="supplier_notlp" layoutX="153.0" layoutY="134.0" prefHeight="25.0" prefWidth="234.0" />
+            <Label layoutX="95.0" layoutY="173.0" text="Email :" textFill="#7c2626">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="supplier_email" layoutX="153.0" layoutY="166.0" prefHeight="25.0" prefWidth="234.0" />
+            <JFXButton fx:id="edit_save" layoutX="181.0" layoutY="212.0" onAction="#edit_save_btn" style="-fx-background-color: #7c2626;" text="SAVE" textFill="WHITE" />
+            <JFXButton fx:id="edit_cancel" layoutX="236.0" layoutY="212.0" onAction="#edit_cancel_btn" style="-fx-background-color: #7c2626;" text="CANCEL" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Label layoutX="221.0" layoutY="149.0" text="SUPPLIER" textFill="#7c2626">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

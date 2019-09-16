@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectjava.Controller.PenjualanController">
+   <children>
+      <HBox layoutX="282.0" prefHeight="52.0" prefWidth="720.0" style="-fx-background-color: #04968f;">
+         <children>
+            <Label alignment="TOP_LEFT" text="PENJUALAN" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="280.0" top="8.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <VBox prefHeight="600.0" prefWidth="279.0" style="-fx-background-color: #151921;">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/picturetopeople.org-bedac87e51a48e29c30ac7edd478783d43ce712b9227449fef.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="11.0" right="12.0" top="60.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="258.0" text="Logged in as ADMIN" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="12.0" />
+               </VBox.margin>
+            </Label>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Separator>
+            <JFXButton fx:id="penjualan_home" alignment="CENTER_RIGHT" focusTraversable="false" onAction="#penjualan_home_change" prefHeight="32.0" prefWidth="282.0" ripplerFill="#72824f" text="HOME" textFill="#d1e99b">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="penjualan_supplier" alignment="CENTER_RIGHT" focusTraversable="false" onAction="#penjualan_supplier_change" prefHeight="31.0" prefWidth="282.0" ripplerFill="#7c2626" text="SUPPLIER" textFill="#f85b5b">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="penjualan_customer" alignment="CENTER_RIGHT" focusTraversable="false" onAction="#penjualan_customer_change" prefHeight="31.0" prefWidth="282.0" ripplerFill="#3b5f91" text="CUSTOMER" textFill="#6aabfb">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="penjualan_item" alignment="CENTER_RIGHT" focusTraversable="false" onAction="#penjualan_item_change" prefHeight="33.0" prefWidth="282.0" ripplerFill="#772b5a" text="ITEM" textFill="#f837b5">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="penjualan_pembelian" alignment="CENTER_RIGHT" focusTraversable="false" onAction="#penjualan_pembelian_change" prefHeight="33.0" prefWidth="282.0" ripplerFill="#b7590c" text="PEMBELIAN" textFill="#ff7e14">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="penjualan_penjualan" alignment="CENTER_RIGHT" onAction="#penjualan_penjualan_change" prefHeight="34.0" prefWidth="282.0" ripplerFill="#04968f" text="PENJUALAN" textFill="#06dbcd">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="penjualan_suratjalan" alignment="CENTER_RIGHT" onAction="#penjualan_suratjalan_change" prefHeight="33.0" prefWidth="282.0" ripplerFill="#a84374" text="SURAT JALAN" textFill="#e698bf">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="penjualan_laporan" alignment="CENTER_RIGHT" onAction="#penjualan_laporan_change" prefHeight="32.0" prefWidth="282.0" ripplerFill="#755515" text="LAPORAN" textFill="#ffb833">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <JFXTabPane layoutX="290.0" layoutY="60.0" prefHeight="534.0" prefWidth="703.0">
+         <tabs>
+            <Tab style="-fx-background-color: #04968f; -fx-pref-width: 230;" text="Nota Penjualan">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="703.0">
+                           <children>
+                              <JFXTextField fx:id="searchpenjualan_tf" focusColor="#72824f" layoutX="95.0" layoutY="12.0" prefHeight="25.0" prefWidth="432.0" />
+                              <JFXButton fx:id="searchpenjualan_btn" layoutX="536.0" layoutY="12.0" onAction="#searchpenjualan_btnClick" style="-fx-background-color: #04968f;" text="Search" textFill="WHITE" />
+                              <TableView fx:id="notapenjualan_table" layoutX="18.0" layoutY="61.0" prefHeight="393.0" prefWidth="661.0">
+                                 <columns>
+                                    <TableColumn fx:id="id" prefWidth="75.0" text="ID Nota Penjualan" />
+                                    <TableColumn fx:id="nama_customer" prefWidth="75.0" text="Nama Customer" />
+                                    <TableColumn fx:id="tanggal" prefWidth="75.0" text="Tanggal" />
+                                    <TableColumn fx:id="total_harga" prefWidth="75.0" text="Total Harga" />
+                                 </columns>
+                              </TableView>
+                              <JFXButton fx:id="addpenjualan_btn" layoutX="259.0" layoutY="466.0" onAction="#addpenjualan_btnClick" style="-fx-background-color: #04968f;" text="Add" textFill="WHITE" />
+                              <JFXButton fx:id="editpenjualan_btn" layoutX="322.0" layoutY="466.0" onAction="#editpenjualan_btnClick" style="-fx-background-color: #04968f;" text="Edit" textFill="WHITE" />
+                              <JFXButton fx:id="deletepenjualan_btn" layoutX="385.0" layoutY="466.0" onAction="#deletepenjualan_btnClick" style="-fx-background-color: #04968f;" text="Delete" textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #04968f; -fx-pref-width: 230;" text="Retur Penjualan">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="496.0" prefWidth="703.0">
+                           <children>
+                              <JFXTextField fx:id="searchreturpenjualan_tf" focusColor="#72824f" layoutX="92.0" layoutY="9.0" prefHeight="25.0" prefWidth="432.0" />
+                              <JFXButton fx:id="searchreturpenjualan_btn" layoutX="540.0" layoutY="13.0" onAction="#searchreturpenjualan_btnClick" style="-fx-background-color: #04968f;" text="Search" textFill="WHITE" />
+                              <TableView fx:id="returpenjualan_table" layoutX="19.0" layoutY="50.0" prefHeight="400.0" prefWidth="661.0">
+                                 <columns>
+                                    <TableColumn fx:id="id_returpenjualan" prefWidth="75.0" text="ID Retur Penjualan" />
+                                    <TableColumn fx:id="id_notapenjualan" prefWidth="75.0" text="ID Nota Penjualan" />
+                                    <TableColumn fx:id="nama_customer_rp" prefWidth="75.0" text="Nama Customer" />
+                                    <TableColumn fx:id="tanggal_rp" prefWidth="75.0" text="Tanggal" />
+                                    <TableColumn fx:id="total_rp" prefWidth="75.0" text="Total Harga" />
+                                 </columns>
+                              </TableView>
+                              <JFXButton fx:id="addreturpenjualan_btn" layoutX="264.0" layoutY="462.0" onAction="#addreturpenjualan_btnClick" style="-fx-background-color: #04968f;" text="Add" textFill="WHITE" />
+                              <JFXButton fx:id="editreturpenjualan_btn" layoutX="324.0" layoutY="462.0" onAction="#editreturpenjualan_btnClick" style="-fx-background-color: #04968f;" text="Edit" textFill="WHITE" />
+                              <JFXButton fx:id="deletereturpenjualan_btn" layoutX="385.0" layoutY="462.0" onAction="#deletereturpenjualan_btnClick" style="-fx-background-color: #04968f;" text="Delete" textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #04968f; -fx-pref-width: 230;" text="Pembayaran Piutang">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="499.0" prefWidth="701.0">
+                           <children>
+                              <JFXTextField fx:id="searchpembayaranpiutang_tf" focusColor="#72824f" layoutX="92.0" layoutY="9.0" prefHeight="25.0" prefWidth="432.0" />
+                              <JFXButton fx:id="searchpembayaranpiutang_btn" layoutX="540.0" layoutY="13.0" onAction="#searchpembayaranpiutang_btnClick" style="-fx-background-color: #04968f;" text="Search" textFill="WHITE" />
+                              <TableView fx:id="pembayaranpiutang_table" layoutX="19.0" layoutY="55.0" prefHeight="395.0" prefWidth="661.0">
+                                 <columns>
+                                    <TableColumn fx:id="id_pembayaranpiutang" prefWidth="75.0" text="ID Pembayaran Piutang" />
+                                    <TableColumn fx:id="nama_customer_pp" prefWidth="75.0" text="Nama Customer" />
+                                    <TableColumn fx:id="tanggal_pp" prefWidth="75.0" text="Tanggal" />
+                                    <TableColumn fx:id="total_pembayaran" prefWidth="75.0" text="Total Pembayaran" />
+                                 </columns>
+                              </TableView>
+                              <JFXButton fx:id="addpembayaranpiutang_btn" layoutX="264.0" layoutY="462.0" onAction="#addpembayaranpiutang_btnClick" style="-fx-background-color: #04968f;" text="Add" textFill="WHITE" />
+                              <JFXButton fx:id="editpembayaranpiutang_btn" layoutX="324.0" layoutY="462.0" onAction="#editpembayaranpiutang_btnClick" style="-fx-background-color: #04968f;" text="Edit" textFill="WHITE" />
+                              <JFXButton fx:id="deletepembayaranpiutang_btn" layoutX="385.0" layoutY="462.0" onAction="#deletepembayaranpiutang_btnClick" style="-fx-background-color: #04968f;" text="Delete" textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</Pane>

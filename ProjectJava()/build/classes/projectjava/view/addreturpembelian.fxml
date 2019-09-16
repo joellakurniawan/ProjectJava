@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #b7590c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectjava.Controller.AddReturPembelianController">
+   <children>
+      <FontAwesomeIcon fill="WHITE" iconName="EXCHANGE" layoutX="103.0" layoutY="222.0" size="10em" />
+      <ImageView fitHeight="60.0" fitWidth="140.0" layoutX="94.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/picturetopeople.org-bedac87e51a48e29c30ac7edd478783d43ce712b9227449fef.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="14.0" layoutY="248.0" prefHeight="260.0" prefWidth="299.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="46.0" layoutY="14.0" text="DETAIL RETUR PEMBELIAN" textFill="#b7590c">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="48.0" text="ID :" textFill="#b7590c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="114.0" layoutY="41.0" orientation="VERTICAL" prefHeight="157.0" prefWidth="6.0" />
+            <Label layoutX="52.0" layoutY="76.0" text="Supplier :" textFill="#b7590c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailreturpembelian_id" layoutX="127.0" layoutY="48.0" text="########" textFill="#b7590c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="108.0" text="Nota :" textFill="#b7590c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="jumlah_textfield" layoutX="167.0" layoutY="167.0" prefHeight="25.0" prefWidth="100.0" />
+            <JFXComboBox fx:id="supplier_cb" layoutX="127.0" layoutY="72.0" prefHeight="25.0" prefWidth="100.0" />
+            <JFXComboBox fx:id="notapembelian_cb" layoutX="127.0" layoutY="102.0" onAction="#change" prefHeight="25.0" prefWidth="140.0" />
+            <Label layoutX="57.0" layoutY="171.0" text="Jumlah :" textFill="#b7590c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="setsupplier_btn" layoutX="233.0" layoutY="73.0" onAction="#setsupplier_btnClick" style="-fx-background-color: #b7590c;" text="SET" textFill="WHITE" />
+            <JFXButton fx:id="adddetailreturpembelian_btn" layoutX="129.0" layoutY="213.0" onAction="#adddetailreturpembelian_btnClick" style="-fx-background-color: #b7590c;" text="ADD" textFill="WHITE" />
+            <Label layoutX="72.0" layoutY="141.0" text="Item :" textFill="#b7590c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="item_cb" layoutX="127.0" layoutY="135.0" onAction="#itemchange" prefHeight="25.0" prefWidth="140.0" />
+            <Label fx:id="jumlah_txt" layoutX="127.0" layoutY="171.0" prefHeight="19.0" prefWidth="47.0" text="0 bj" textFill="#b7590c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="336.0" layoutY="18.0" prefHeight="564.0" prefWidth="643.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="227.0" layoutY="14.0" text="ADD RETUR PEMBELIAN" textFill="#b7590c">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="236.0" layoutY="44.0" text="ID :" textFill="#b7590c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="262.0" layoutY="39.0" orientation="VERTICAL" prefHeight="107.0" prefWidth="1.0" />
+            <Label layoutX="200.0" layoutY="68.0" text="Supplier :" textFill="#b7590c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="returpembelian_id" layoutX="275.0" layoutY="44.0" text="########" textFill="#b7590c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="202.0" layoutY="93.0" text="Tanggal :" textFill="#b7590c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="tanggal" defaultColor="#b7590c" layoutX="275.0" layoutY="86.0" />
+            <TableView fx:id="addreturpembelian_table" layoutX="19.0" layoutY="160.0" prefHeight="356.0" prefWidth="604.0">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="75.0" text="ID Detail Retur" />
+                  <TableColumn fx:id="nama_item" prefWidth="75.0" text="Nama Item" />
+                  <TableColumn fx:id="jumlah" prefWidth="75.0" text="Jumlah" />
+                  <TableColumn fx:id="harga_satuan" prefWidth="75.0" text="Harga Satuan" />
+                  <TableColumn fx:id="total" prefWidth="75.0" text="Total" />
+               </columns>
+            </TableView>
+            <Label fx:id="total_txt" layoutX="290.0" layoutY="528.0" text="########" textFill="#b7590c">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="supplier_id" layoutX="275.0" layoutY="69.0" text="########" textFill="#b7590c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="addreturpembelian_btn" layoutX="515.0" layoutY="526.0" onAction="#addreturpembelian_btnClick" style="-fx-background-color: #b7590c;" text="ADD" textFill="WHITE" />
+            <JFXButton fx:id="addreturpenjualan_cancel" layoutX="564.0" layoutY="526.0" onAction="#addreturpembelian_cancel_btn" style="-fx-background-color: #b7590c;" text="CANCEL" textFill="WHITE" />
+            <Pane layoutX="279.0" layoutY="123.0" prefHeight="21.0" prefWidth="246.0">
+               <children>
+                  <JFXRadioButton fx:id="potongnota_cb" text="Potong Nota" />
+                  <JFXRadioButton fx:id="potongtunai_cb" layoutX="110.0" text="Potong Tunai" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</Pane>

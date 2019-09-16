@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="657.0" fitWidth="1003.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fix.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="351.0" layoutY="254.0" prefHeight="32.0" prefWidth="300.0" ripplerFill="#72824f" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="HOME" textFill="#72824f">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="351.0" layoutY="291.0" prefHeight="31.0" prefWidth="300.0" ripplerFill="#7c2626" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="SUPPLIER" textFill="#7c2626">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="351.0" layoutY="328.0" prefHeight="31.0" prefWidth="300.0" ripplerFill="#3b5f91" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="CUSTOMER" textFill="#3b5f91">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="351.0" layoutY="365.0" prefHeight="33.0" prefWidth="300.0" ripplerFill="#772b5a" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="ITEM" textFill="#772b5a">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="351.0" layoutY="402.0" prefHeight="33.0" prefWidth="300.0" ripplerFill="#b7590c" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="PEMBELIAN" textFill="#b7590c">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="351.0" layoutY="439.0" prefHeight="34.0" prefWidth="300.0" ripplerFill="#04968f" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="PENJUALAN" textFill="#04968f">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="351.0" layoutY="476.0" prefHeight="36.0" prefWidth="300.0" ripplerFill="#a84374" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="SURAT JALAN" textFill="#a84374">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="351.0" layoutY="513.0" prefHeight="36.0" prefWidth="300.0" ripplerFill="#755515" style="-fx-background-color: #cfe0aa; -fx-opacity: 0.8;" text="LAPORAN" textFill="#755515">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

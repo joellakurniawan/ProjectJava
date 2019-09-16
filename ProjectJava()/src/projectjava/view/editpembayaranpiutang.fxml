@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #04968f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectjava.Controller.EditPembayaranPiutangController">
+   <children>
+      <FontAwesomeIcon fill="WHITE" iconName="MONEY" layoutX="100.0" layoutY="228.0" size="10em" />
+      <ImageView fitHeight="60.0" fitWidth="140.0" layoutX="94.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/picturetopeople.org-bedac87e51a48e29c30ac7edd478783d43ce712b9227449fef.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="14.0" layoutY="248.0" prefHeight="260.0" prefWidth="299.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="27.0" layoutY="14.0" text="DETAIL PEMBAYARAN PIUTANG" textFill="#04968f">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="48.0" text="ID :" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="114.0" layoutY="41.0" orientation="VERTICAL" prefHeight="157.0" prefWidth="6.0" />
+            <Label layoutX="44.0" layoutY="76.0" text="Customer :" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailpembayaranpiutang_id" layoutX="127.0" layoutY="48.0" text="########" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="109.0" text="Nota :" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="140.0" text="Saldo Piutang :" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="pembayaran_textfield" layoutX="127.0" layoutY="167.0" prefHeight="25.0" prefWidth="140.0" />
+            <JFXComboBox fx:id="notapenjualan_cb" layoutX="127.0" layoutY="102.0" onAction="#change" prefHeight="25.0" prefWidth="140.0" />
+            <Label layoutX="65.0" layoutY="171.0" text="Bayar :" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="saldopiutang_txt" layoutX="127.0" layoutY="141.0" text="########" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="adddetailppiutang_btn" layoutX="129.0" layoutY="213.0" onAction="#adddetailppiutang_btnClick" style="-fx-background-color: #04968f;" text="ADD" textFill="WHITE" />
+            <Label fx:id="customer_id2" layoutX="127.0" layoutY="76.0" text="########" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="336.0" layoutY="18.0" prefHeight="564.0" prefWidth="643.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="209.0" layoutY="14.0" text="EDIT PEMBAYARAN PIUTANG" textFill="#04968f">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="236.0" layoutY="48.0" text="ID :" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="262.0" layoutY="39.0" orientation="VERTICAL" prefHeight="107.0" prefWidth="1.0" />
+            <Label layoutX="192.0" layoutY="77.0" text="Customer :" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="pembayaranpiutang_id" layoutX="275.0" layoutY="48.0" text="########" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="202.0" layoutY="106.0" text="Tanggal :" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="tanggal" defaultColor="#04968f" layoutX="275.0" layoutY="103.0" />
+            <TableView fx:id="editpembayaranpiutang_table" layoutX="19.0" layoutY="160.0" prefHeight="356.0" prefWidth="604.0">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="75.0" text="ID Detail Pembayaran" />
+                  <TableColumn fx:id="id_notapenjualan" prefWidth="75.0" text="ID Nota Penjualan" />
+                  <TableColumn fx:id="saldo_piutang" prefWidth="75.0" text="Saldo Piutang" />
+                  <TableColumn fx:id="pembayaran" prefWidth="75.0" text="Pembayaran" />
+               </columns>
+            </TableView>
+            <Label fx:id="totalpembayaran_txt" layoutX="290.0" layoutY="528.0" text="########" textFill="#04968f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="customer_id" layoutX="275.0" layoutY="78.0" text="########" textFill="#04968f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="editpembayaranpiutang_btn" layoutX="512.0" layoutY="526.0" onAction="#editpembayaranpiutang_btnClick" style="-fx-background-color: #04968f;" text="SAVE" textFill="WHITE" />
+            <JFXButton fx:id="editpembayaranpiutang_cancel" layoutX="564.0" layoutY="526.0" onAction="#editpembayaranpiutang_cancel_btn" style="-fx-background-color: #04968f;" text="CANCEL" textFill="WHITE" />
+            <JFXButton fx:id="deletedetailpembayaranpiutang_btn" layoutX="19.0" layoutY="526.0" onAction="#deletedetailpembayaranpiutang_btnClick" style="-fx-background-color: #04968f;" text="DELETE" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
